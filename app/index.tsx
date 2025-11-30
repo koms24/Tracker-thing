@@ -1,26 +1,18 @@
-import { StyleSheet, Text, View } from "react-native";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import ExpenseForm from '../components/ExpenseForm';
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text style={styles.text}>Home screen</Text>
-          </View>
+    <View style={styles.container}>
+      <ExpenseForm />
+    </View>
   );
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#25292e',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    color: '#fff',
+    backgroundColor: '#fff',
   },
 });
